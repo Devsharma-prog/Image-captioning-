@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Captioning - PixelSpeak</title>
+    <link rel="stylesheet" href="/frontend/web.css">
+</head>
+
+<body>
+   <nav>
+        <h3>PixelSpeak</h3>
+        <p> Your hub of getting captions out of images</p>
+        <!--
+        <a href="#">History</a>
+        <a href="#">Analytics</a>
+        <a href="#">Settings</a>
+   -->
+     </nav>
+
+    <main>
+        <header>
+            <h1 style="color: white;">Image Captioning</h1>
+        </header>
+        
+        <section>
+            <h2>Real-Time Captioning</h2>
+            <p><strong>Status:</strong> <span id="status" style="color: rgb(182, 68, 42);">Waiting for image...</span></p>
+            
+            <div class="input-group">
+                <label for="image-upload" class="upload-label">Upload Image:</label>
+                <input type="file" id="image-upload" onchange="previewImage(event)" style="display: none;">
+            </div>
+
+            <div class="camera-option">
+                <div id="image-preview" style="margin-top: 20px; text-align: center;">
+                    <img id="preview" src="" alt="Uploaded Image Preview" style="max-width: 100%; max-height: 300px; display: none;">
+                </div>
+
+                <button class="button" onclick="document.getElementById('image-upload').click();">Upload Image</button>
+                <button class="button" onclick="captureFromCamera()">Capture from Camera</button>
+                <button class="button" id="generate-caption">Generate Caption</button>
+
+                <!-- Output area for the generated caption -->
+                <div id="caption-output" style="margin-top: 20px; text-align: center; color: black; font-size: 1.2em;"></div>
+            </div>
+            
+        </section>
+        
+        <footer>
+            <p>Powered by PixelSpeak. Providing cutting-edge image captioning solutions.</p>
+        </footer>
+    </main>
+
+    <script src="/frontend/web.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

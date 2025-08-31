@@ -1,34 +1,44 @@
-# Image-captioning-
-This project is a full-stack Image Captioning system that automatically generates human-like captions for images using a CNN + RNN/LSTM architecture. The model is trained and evaluated on the Flickr8k dataset, which contains 8,000 images paired with five descriptive captions each.
+# 🧠 Image Captioning Project
 
-Features
+A full-stack image captioning app that generates captions for uploaded images using a deep learning model (CNN + LSTM).
 
-Interactive website – Upload an image and get an AI-generated caption in real time
+## 🧰 Tech Stack
 
-Deep learning backend – Uses a pre-trained CNN (e.g., InceptionV3/ResNet) for feature extraction and an LSTM-based RNN for sequence generation
+- Python (TensorFlow, Keras, Flask)
+- HTML, CSS, JS (Frontend)
+- Flickr8k Dataset
 
-Flickr8k dataset integration – Cleaned and preprocessed dataset with image-text mapping
+## 📁 Folder Structure
+image-captioning-project/ ├── backend/ │ ├── model/ # Model architecture and weights │ ├── utils/ # Preprocessing utilities │ ├── app.py # Flask backend server │ └── README.md # Project details ├── flickr8k/ # Dataset folder (images + captions) │ ├── Images/ │ ├── captions.txt │ └── Flickr8k.trainImages.txt (etc.) ├── frontend/ # Frontend UI │ ├── index.html │ ├── style.css │ ├── script.js ├── requirements.txt # Python libraries └── README.md # (You're reading it!)
 
-Training pipeline – Data preprocessing, feature extraction, and caption generation implemented from scratch
+yaml
+Copy code
 
-Frontend – User-friendly interface with HTML, CSS, and JavaScript
+---
 
-Backend – Python-based model serving (Flask/Django)
+### 💻 How to Run
 
-Tech Stack
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
 
-Frontend: HTML, CSS, JavaScript
+# 2. Run the backend server
+cd backend
+python app.py
 
-Backend: Python (Flask/Django)
+# 3. Open the frontend
+# Just open index.html in any browser (e.g. Chrome)
+📸 Model Info
+CNN: Pre-trained InceptionV3 extracts image features.
 
-Deep Learning: TensorFlow/Keras, CNN, LSTM
+RNN: LSTM generates natural language captions.
 
-Dataset: Flickr8k
+Dataset: Flickr8k — 8,000 images with 5 captions each.
 
-Use Cases
+🙋‍♂️ Contributors
+[Your Name]
 
-Assist visually impaired individuals by describing images
+[Teammates' Names]
 
-Enhance content management and accessibility
-
-Demonstrate deep learning applications in NLP + Computer Vision
+📄 License
+This project is for educational purposes only.
