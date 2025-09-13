@@ -36,9 +36,11 @@ RNN: LSTM generates natural language captions.
 Dataset: Flickr8k — 8,000 images with 5 captions each.
 
 🙋‍♂️ Contributors
-[Your Name]
+[Dev Sharma ]
 
-[Teammates' Names]
-
+[Aaryan verma]
+[Arpit Giri]
+[Devansh Saini]
 📄 License
 This project is for educational purposes only.
+
